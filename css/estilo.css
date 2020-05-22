@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* nav*/
+.logo {
+  text-align: center;
+}
+
+.ver, .filtro {
+  display: none;
+}
+
+.icono {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+nav {
+  -webkit-box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  background-color: #271d2d;
+}
+
+.navbar-dark .menu li {
+  padding: 0 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #ffffff;
+}
+.navbar-dark .navbar-toggler {
+  color: #ffffff;
+  border: none;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus, a:active {
+  font-weight: bolder;
+}
+
+/*Columna izquierda*/
+.columnas {
+  font-size: 14px;
+  margin-top: 100px;
+}
+.columnas a:hover {
+  font-weight: bolder;
+}
+.columnas ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding-left: 13px;
+}
+.columnas a {
+  color: #000000;
+}
+
+.zapatillas {
+  float: left;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tipo {
+  float: left;
+  width: 100%;
+  background-color: #cccfd2;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.filtrar {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  margin: 10px;
+}
+
+·columna_1 {
+  display: block;
+}
+
+#fa-slider {
+  float: right;
+  display: none;
+}
+
+/* grilla */
+.grilla {
+  font-size: 14px;
+}
+
+.modelo {
+  margin: 5px 0;
+}
+
+.precio {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.img-fluid {
+  position: relative;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+.img-fluid:hover {
+  position: relative;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.container_imagen {
+  overflow: hidden;
+  border-bottom: 1px solid #271d2d;
+}
+
+footer {
+  font-size: 14px;
+  background-color: #271d2d;
+  color: #ffffff;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px;
+}
+footer a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .ocultar, #columna_1 {
+    display: none;
+  }
+
+  .ver, #fa-slider {
+    display: block;
+  }
+
+  .navbar {
+    padding: 15px 15px 15px 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  footer ul li {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    display: block;
+  }
+}
+/*170*/
+
+/*# sourceMappingURL=estilo.css.map */
