@@ -1,3 +1,3 @@
 function mostrarOcultar(){
-    $("#columna_1").toggle();
+    $(".sidebar__menu").toggle();
 }

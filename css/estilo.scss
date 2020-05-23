@@ -1,4 +1,3 @@
-    /* nav*/
 $colorUno:#271d2d;
 $colorDos:#ffffff;
 $colorTres:#cccfd2;
@@ -19,18 +18,29 @@ $colorCuatro:#000000;
     transform: scale($scale);
     cursor: pointer;
 }
-
+.ver,
+.filtro{
+    display: none;
+}
+/*
+    Logo
+*/
 .logo{
     text-align: center;
 }
-.ver, .filtro{
-    display: none;
+.logo__imagen{
+    width: 160px;
 }
-
+/*
+    icono
+*/
 .icono{
     color: $colorDos;
     font-size: 20px;
 }
+/*
+    Nav
+*/
 nav{
     -webkit-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.75);
@@ -39,7 +49,7 @@ nav{
 }
 
 .navbar-dark{
-    & .menu li{
+    & .navbar__menu li{
         padding: 0 20px;
     }
     & .navbar-nav{
@@ -57,6 +67,7 @@ nav{
         border: none;
     }
 }
+
 a{
     color: $colorDos;
     &:hover{
@@ -65,75 +76,83 @@ a{
     &:focus, &:active{
         font-weight: bolder;
     }
-
 }
 
-/*Columna izquierda*/
-.columnas {
+.columnas{
+    margin: 100px 0 30px 0;
+}
+
+/*
+    Sidebar
+*/
+.sidebar{
+    @include floatLeft;
+}
+.sidebar__menu{
+    display: block;
     font-size: 14px;
-    margin-top: 100px;
-    & a:hover{
-        font-weight: bolder;
-    }
-    &  ul{
+    @include floatLeft;
+    & ul{
         @include floatLeft;
         list-style: none;
         padding-left:13px;
     }
     & a{
         color: $colorCuatro;
+        &:hover{
+            font-weight: bolder;
+        }
     }
 }
-.zapatillas{
+.sidebar__texto{
     @include floatLeft;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    border-bottom: 1px solid;
     font-weight: bold;
-    font-size: 20px;
-
 }
-.tipo{
-    @include floatLeft;
+.sidebar--zapatillas{
+    font-size: 20px;
+    border-bottom: 1px solid;
+}
+.sidebar--filtrar{
+    margin: 10px 0;
+}
+.sidebar--tipo{
     background-color: $colorTres;
     padding: 5px 10px;
-    font-weight: bold;
 }
-.filtrar{
-    @include floatLeft;
-    font-weight: bold;
-    margin: 10px;
-}
-
-·columna_1{
-    display: block;
-}
-#fa-slider{
+.sidebar__icono{
     float: right;
     display: none;
 }
-/* grilla */
+/*
+    grilla
+*/
+
 .grilla{
     font-size: 14px;
 }
-.modelo{
-    margin: 5px 0;
+.grilla__box{
+    margin-bottom: 20px;
 }
-.precio{
-    margin-bottom: 10px;
+.grilla__contenedor_imagen{
+    overflow: hidden;
+    border-bottom: 1px solid $colorUno;
+}
+.grilla__texto{
+    margin: 5px 0 0 0;
+}
+.grilla--precio{
     font-weight: bolder;
 }
-
-.img-fluid{
+.grilla__imagen{
+    @include floatLeft;
     @include transform(transform, 0.5s, ease, 1,relative);
     &:hover{
         @include transform(transform, 0.5s, ease-in-out, 1.1,relative);
     }
 }
-.container_imagen{
-    overflow: hidden;
-    border-bottom: 1px solid $colorUno;
-}
+/*
+    footer
+*/
 footer{
     font-size: 14px;
     background-color: $colorUno;
@@ -153,10 +172,12 @@ footer{
     }
 }
 @media (max-width: 576px) {
-    .ocultar, #columna_1{
+    .ocultar,
+    .sidebar__menu{
         display: none;
     }
-    .ver, #fa-slider{
+    .ver,
+    .sidebar__icono{
         display: block;
     }
     .navbar{
@@ -176,4 +197,3 @@ footer{
         }
     }
 }
-/*170*/
